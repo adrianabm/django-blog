@@ -1,1 +1,7 @@
-This is the home template.
+<h1>Welcome to Django Blog!</h1>
+
+<p>Latest Posts</p>
+
+  {% for post in posts.all %}
+    <p>{{ post.title }}</p>
+  {% endfor %}
