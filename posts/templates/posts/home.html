@@ -8,4 +8,5 @@
     <p>{{ post.summary }}...</p>
     <img src="{{ post.image.url }}" alt="">
     <br />
+    <a href="{% url 'post_detail' post.id %}">See more</a>
   {% endfor %}
